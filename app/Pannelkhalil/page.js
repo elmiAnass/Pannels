@@ -1,7 +1,5 @@
 // pages/pannel.js
 "use client";
-import { useEffect } from "react";
-import { isAuthenticated } from "../utils/auth";
 import { useState } from "react";
 
 const items = [
@@ -164,27 +162,9 @@ const items = [
 ];
 
 const PannelPage = () => {
-  useEffect(() => {
-    console.log("PannelPage - useEffect");
-    // Check if the user is not authenticated
-    if (!isAuthenticated()) {
-      console.log(
-        "PannelPage - User is not authenticated. Redirecting to /auth"
-      );
-      // Redirect to the login page if not authenticated
-      window.location.href = "/auth";
-    } else {
-      console.log("PannelPage - User is authenticated. Rendering content.");
-    }
-  }, []);
 
-  // Return null if the user is not authenticated (optional)
-  if (!isAuthenticated()) {
-    console.log("PannelPage - User is not authenticated. Returning null.");
-    return null;
-  }
 
-  console.log("PannelPage - Rendering content for authenticated user.");
+
 
   // Render the content for authenticated users
   const [activeTab, setActiveTab] = useState("pannel");
