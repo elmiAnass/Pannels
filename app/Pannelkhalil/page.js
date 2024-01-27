@@ -44,7 +44,7 @@ const items = [
   },
   {
     title: "Shark IPTV",
-    imageUrl: "https://sharkiptvpro.net/wp-content/themes/Shark/img/logo.png",
+    imageUrl: "https://content.avito.ma/images/10/10106776828.jpg",
     color: "cyan",
     link: "https://sharkpanel.com/index",
     type: "pannel",
